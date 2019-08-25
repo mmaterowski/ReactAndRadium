@@ -1,4 +1,14 @@
+import Radium from "radium";
 import config from "./config-styles";
+
+const pulse = Radium.keyframes(
+  {
+    "0%": { transform: "scale3d(1,1,1)" },
+    "15%": { transform: "scale3d(1.05,1.05,1.05)" },
+    "100%": { transform: "scale3d(1,1,1)" }
+  },
+  "Nav"
+);
 
 const btn = {
   flex: 1,
@@ -11,7 +21,13 @@ const btn = {
   border: "none",
   outline: 0,
   curosr: "pointer",
-  userSelect: "none"
+  userSelect: "none",
+  ":hover": {
+    transition: "all 1s",
+    color: "#8c9ea3",
+    animation: "placeholder 1s infinite",
+    animationName: pulse
+  }
 };
 const hidden = {
   visibility: "hidden"

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styles from "./carousel-styles";
-
+import Radium from "radium";
 function renderSlides(props) {
   return React.Children.map(props.children, (slide, i) => {
     return React.cloneElement(slide, {
@@ -29,4 +29,4 @@ Carousel.propTypes = {
   width: PropTypes.number
 };
 
-export default Carousel;
+export default Radium(Carousel);

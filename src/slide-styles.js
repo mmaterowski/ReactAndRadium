@@ -16,7 +16,7 @@ export default {
     padding: 15,
     background: "rgba(0,0,0,0.3)",
     color: "#fff",
-    textShadow: "1px 1px 0 rgba(0,0,0,0.6",
+    textShadow: "1px 1px 0 rgba(0,0,0,0.6)",
     fontFamily: '"Helvetica Neue",Helvetica,Arial, sans-sefg',
     fontSize: 14,
     inlineHeight: "1.4em",
