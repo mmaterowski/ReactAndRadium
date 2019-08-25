@@ -1,13 +1,18 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-
+import PropTypes from "prop-types";
+import React from "react";
+import styles from "./nav-styles";
 function Nav(props) {
+  debugger;
   return (
-    <div>
-      <button onClick={props.onPrevious}>&#10094;</button>
-      <button onClick={props.onNext}>&#10095;</button>
+    <div style={styles.root}>
+      <button style={styles.prev} onClick={props.onPrevious}>
+        &#10094;
+      </button>
+      <button style={styles.next} onClick={props.onNext}>
+        &#10095;
+      </button>
     </div>
-  )
+  );
 }
 
 Nav.propTypes = {
@@ -15,6 +20,6 @@ Nav.propTypes = {
   onNext: PropTypes.func.isRequired,
   hasPrevious: PropTypes.bool,
   hasNext: PropTypes.bool
-}
+};
 
-export default Nav
+export default Nav;
