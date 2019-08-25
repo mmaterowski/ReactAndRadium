@@ -13,7 +13,9 @@ const btn = {
   curosr: "pointer",
   userSelect: "none"
 };
-
+const hidden = {
+  visibility: "hidden"
+};
 const prev = {
   ...btn,
   textAlign: "left"
@@ -33,5 +35,13 @@ export default {
     display: "flex"
   },
   prev,
-  next
+  prevHidden: {
+    ...prev,
+    ...hidden
+  },
+  next,
+  nextHidden: {
+    ...next,
+    ...hidden
+  }
 };
